@@ -4,7 +4,7 @@ python:
     - "3.5"
 
 install:
-    - pip install --user codecov
+    - pip install codecov
 
 script:
     - python -m pytest -v tests/

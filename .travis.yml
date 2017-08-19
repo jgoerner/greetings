@@ -4,10 +4,11 @@ python:
     - "3.5"
 
 install:
-    - pip install codecov pytest-cov
+    - pip install codecov pytest-cov coveralls
 
 script:
     - python -m pytest --cov=./ 
 
 after_success:
     - codecov
+    - coveralls 

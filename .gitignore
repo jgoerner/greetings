@@ -1,1 +1,3 @@
+.coverage
+cov_html
 *.pyc

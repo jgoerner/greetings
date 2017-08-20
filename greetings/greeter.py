@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 
-GREETING_DICT={"EN": ["Hello", "How are you"],
-               "DE": ["Hallo", "Wie geht es dir"],
-               "ZH": ["Ni hao", "Ni hao ma"]}
+GREETING_DICT = {"EN": ["Hello", "How are you"],
+                 "DE": ["Hallo", "Wie geht es dir"],
+                 "ZH": ["Ni hao", "Ni hao ma"]}
+
 
 def greet(person, language='EN'):
     """Greet a person in a specific language
@@ -16,8 +17,11 @@ def greet(person, language='EN'):
 
     """
     if language not in GREETING_DICT.keys():
-        raise ValueError("{} is currently not supported, please use {}"
-                         .format(language, " ".join(list(GREETING_DICT.keys()))))
+        raise ValueError(
+            "{} is currently not supported, please use {}" .format(
+                language, " ".join(
+                    list(
+                        GREETING_DICT.keys()))))
 
     greeting = "{} {}, {}".format(GREETING_DICT[language][0],
                                   person,

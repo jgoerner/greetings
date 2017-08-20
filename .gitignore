@@ -2,3 +2,7 @@ docs/_build
 .coverage
 cov_html
 *.pyc
+.eggs/
+build
+dist
+jgoerner_greetings.egg-info/
